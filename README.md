@@ -1,31 +1,31 @@
-Backend Week 1 Task:
+##Backend Week 1 Task:
 
 A simple backend application built with Node.js, Express, and MongoDB Atlas.
 It handles user management, preferences, and posts with proper data validation and soft delete logic.
 
-Features:
+##Features:
 
-User APIs for create, read, update, soft delete, and hard delete (with 24-hour grace period)
+- User APIs for create, read, update, soft delete, and hard delete (with 24-hour grace period)
 
-Preferences APIs to create or update user preferences
+- Preferences APIs to create or update user preferences
 
-Post APIs to create, read, and soft delete user posts
+- Post APIs to create, read, and soft delete user posts
 
-MongoDB Atlas and Mongoose used for data modeling
+- MongoDB Atlas and Mongoose used for data modeling
 
-Simple and modular folder structure for scalability and maintainability
+- Simple and modular folder structure for scalability and maintainability
 
-Tech Stack:
+##Tech Stack:
 
-Node.js
+- Node.js
 
-Express.js
+- Express.js
 
-MongoDB Atlas
+- MongoDB Atlas
 
-Mongoose
+- Mongoose
 
-Clone this repository:
+- Clone this repository:
 ```
 git clone https://github.com/dhanushshruthi/task1-backend.git
 cd task1-backend
