@@ -55,6 +55,7 @@ API Endpoints
 
 Structure:
 
+```
 backend-week1/
 │
 ├── src/
@@ -74,4 +75,4 @@ backend-week1/
 ├── server.js
 ├── .env
 ├── package.json
-└── README.md
+```
