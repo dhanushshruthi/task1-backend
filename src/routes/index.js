@@ -7,10 +7,15 @@ const postController = require('../controllers/post.controller');
 
 // User routes
 router.post('/users', userController.createUser);
+router.get('/users', userController.getAllUsers);
 router.get('/users/:id', userController.getUser);
+router.get('/users/:id/details', userController.getUserDetails);
 router.put('/users/:id', userController.updateUser);
-router.delete('/users/:id', userController.softDeleteUser);
+router.put('/users/:id/status', userController.updateStatus); // ✅ new toggle status
+router.delete('/users/:id', userController.softDeleteUser);    // ✅ enhanced soft delete
 router.post('/users/:id/purge', userController.purgeUser);
+
+
 
 // Preference routes
 router.put('/users/:userId/preferences', prefController.upsertPreference);
