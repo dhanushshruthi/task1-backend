@@ -87,7 +87,7 @@ The application will start at http://localhost:3000
 
 -Make sure MongoDB Atlas is connected
 
-##API Endpoints (Backend Integration)
+## API Endpoints (Backend Integration)
 | Method | Endpoint                     | Description                                 |
 | ------ | ---------------------------- | ------------------------------------------- |
 | GET    | `/users`                     | Get all users                               |
@@ -101,7 +101,7 @@ The application will start at http://localhost:3000
 | POST   | `/users/:userId/posts`       | Create a new post                           |
 
 
-##Functional Requirements (Implemented)
+## Functional Requirements (Implemented)
 
 | ID | Feature       | Description                                        |
 | -- | ------------- | -------------------------------------------------- |
@@ -111,7 +111,7 @@ The application will start at http://localhost:3000
 | U4 | Update Status | Toggle user active/inactive                        |
 | U5 | Soft Delete   | Mark users as deleted                              |
 
-##Folder Purpose
+## Folder Purpose
 
 | Folder        | Description                             |
 | ------------- | --------------------------------------- |
@@ -121,7 +121,7 @@ The application will start at http://localhost:3000
 | `/app`        | Next.js App Router pages                |
 | `.env.local`  | Contains API URL for connecting backend |
 
-##Future Improvements
+## Future Improvements
 
 -Add pagination to the user list
 
@@ -133,7 +133,7 @@ The application will start at http://localhost:3000
 
 -Implement authentication and role-based access
 
-##How It Works
+## How It Works
 
 -The frontend sends REST API calls to the backend.
 
