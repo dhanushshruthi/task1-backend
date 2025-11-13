@@ -1,0 +1,83 @@
+/* Full-screen gradient background */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #fce4ec, #fff3e0);
+  background-size: 300% 300%;
+  animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Center everything */
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main card with glass effect */
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 50px 70px;
+  max-width: 600px;
+  width: 80%;
+}
+
+/* Text styles */
+.dashboard-title {
+  font-size: 30px;
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+.dashboard-subtitle {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.view-btn, .create-btn {
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Button Colors */
+.view-btn {
+  background-color: #42a5f5;
+}
+.view-btn:hover {
+  background-color: #1e88e5;
+  transform: translateY(-3px);
+}
+
+.create-btn {
+  background-color: #ab47bc;
+}
+.create-btn:hover {
+  background-color: #8e24aa;
+  transform: translateY(-3px);
+}

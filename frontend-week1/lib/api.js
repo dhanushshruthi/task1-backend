@@ -5,15 +5,23 @@ export async function fetchUsers() {
   const res = await fetch(`${API_BASE}/users`);
   return res.json();
 }
-
-export async function createUser(data) {
+export async function createUser(payload) {
   const res = await fetch(`${API_BASE}/users`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data),
+    body: JSON.stringify(payload)
   });
-  return res.json();
+
+  const data = await res.json();
+
+  if (!res.ok) {
+    // Show the backend message if it exists
+    throw new Error(data.message || 'Failed to create user');
+  }
+
+  return data;
 }
+
 
 export async function getUserById(id) {
   const res = await fetch(`${API_BASE}/users/${id}`);
